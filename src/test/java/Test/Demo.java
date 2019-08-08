@@ -25,7 +25,7 @@ public class Demo
 	    options.addArguments("--disable-gpu"); // applicable to windows os only
 	    options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 	    options.addArguments("--no-sandbox"); // Bypass OS security modelop
-	    options.setBinary("/chrome");
+	    options.setBinary("chrome/chromedriver");
 	    
 	    WebDriver driver=new ChromeDriver();
 	      
