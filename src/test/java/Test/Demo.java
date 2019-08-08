@@ -35,7 +35,7 @@ public class Demo
 	// Launch website  
 	    driver.navigate().to("https://www.javatpoint.com/");  
 	    
-	    System.out.println(driver.getCurrentUrl()+"Main aa gaya");
+	    System.out.println(driver.getCurrentUrl()+   "Main aa gaya");
 	    System.out.println("hello");
 	    driver.quit();
 	}
