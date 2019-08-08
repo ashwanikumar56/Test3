@@ -29,7 +29,7 @@ public class Demo
 	    System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
 	    options.setBinary("/usr/bin/google-chrome-stable");
 	    
-	    WebDriver driver=new ChromeDriver();
+	    WebDriver driver=new ChromeDriver(options);
 	      
 	// Launch website  
 	    driver.navigate().to("http://www.google.com/");  
