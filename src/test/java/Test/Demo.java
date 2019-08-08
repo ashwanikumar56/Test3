@@ -27,7 +27,7 @@ public class Demo
 	    options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 	    options.addArguments("--no-sandbox"); // Bypass OS security modelop
 	    System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
-	    options.setBinary("chrome/chromedriver");
+	    options.setBinary("/usr/bin/google-chrome-stable");
 	    
 	    WebDriver driver=new ChromeDriver();
 	      
