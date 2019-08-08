@@ -14,7 +14,7 @@ public class Demo
 		
 		
 		   // declaration and instantiation of objects/variables  
-	    System.setProperty("webdriver.chrome.driver", "chrome/chromedriver"); 
+	    System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver"); 
 	    
  
 	    ChromeOptions options = new ChromeOptions();
@@ -26,6 +26,7 @@ public class Demo
 	    options.addArguments("--disable-gpu"); // applicable to windows os only
 	    options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 	    options.addArguments("--no-sandbox"); // Bypass OS security modelop
+	    System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
 	    options.setBinary("chrome/chromedriver");
 	    
 	    WebDriver driver=new ChromeDriver();
