@@ -19,6 +19,7 @@ public class Demo
  
 	    ChromeOptions options = new ChromeOptions();
 	    
+	    options.addArguments("--headless");
 	    options.addArguments("start-maximized"); // open Browser in maximized mode
 	    options.addArguments("disable-infobars"); // disabling infobars
 	    options.addArguments("--disable-extensions"); // disabling extensions
