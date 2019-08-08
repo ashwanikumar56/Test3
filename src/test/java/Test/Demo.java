@@ -20,20 +20,24 @@ public class Demo
 	    ChromeOptions options = new ChromeOptions();
 	    
 	     options.addArguments("--headless");
-	    options.addArguments("start-maximized"); // open Browser in maximized mode
-	    options.addArguments("disable-infobars"); // disabling infobars
-	    options.addArguments("--disable-extensions"); // disabling extensions
-	    options.addArguments("--disable-gpu"); // applicable to windows os only
-	    options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-	    options.addArguments("--no-sandbox"); // Bypass OS security modelop
-	    System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
+		/*
+		 * options.addArguments("start-maximized"); // open Browser in maximized mode
+		 * options.addArguments("disable-infobars"); // disabling infobars
+		 * options.addArguments("--disable-extensions"); // disabling extensions
+		 * options.addArguments("--disable-gpu"); // applicable to windows os only
+		 * options.addArguments("--disable-dev-shm-usage"); // overcome limited resource
+		 * problems options.addArguments("--no-sandbox"); // Bypass OS security modelop
+		 */	    System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
 	    //options.setBinary("/usr/bin/google-chrome-stable");
 	    
 	    WebDriver driver=new ChromeDriver(options);
 	      
 	// Launch website  
-	    driver.navigate().to("http://www.google.com/");  
+	    driver.navigate().to("https://www.javatpoint.com/");  
+	    
+	    System.out.println(driver.getCurrentUrl()+"Main aa gaya");
 	    System.out.println("hello");
+	    driver.quit();
 	}
 
 }
