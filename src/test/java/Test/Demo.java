@@ -24,7 +24,8 @@ public class Demo
 	    options.addArguments("--disable-extensions"); // disabling extensions
 	    options.addArguments("--disable-gpu"); // applicable to windows os only
 	    options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-	    options.addArguments("--no-sandbox"); // Bypass OS security model
+	    options.addArguments("--no-sandbox"); // Bypass OS security modelop
+	    options.setBinary("/chrome");
 	    
 	    WebDriver driver=new ChromeDriver();
 	      
