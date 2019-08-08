@@ -19,7 +19,7 @@ public class Demo
  
 	    ChromeOptions options = new ChromeOptions();
 	    
-	  //  options.addArguments("--headless");
+	     options.addArguments("--headless");
 	    options.addArguments("start-maximized"); // open Browser in maximized mode
 	    options.addArguments("disable-infobars"); // disabling infobars
 	    options.addArguments("--disable-extensions"); // disabling extensions
@@ -27,7 +27,7 @@ public class Demo
 	    options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 	    options.addArguments("--no-sandbox"); // Bypass OS security modelop
 	    System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
-	    options.setBinary("/usr/bin/google-chrome-stable");
+	    //options.setBinary("/usr/bin/google-chrome-stable");
 	    
 	    WebDriver driver=new ChromeDriver(options);
 	      
